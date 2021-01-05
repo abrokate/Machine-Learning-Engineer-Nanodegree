@@ -1,4 +1,4 @@
-### LESSON 4
+### Lessson 4
 Introduction to Object-Oriented Programming
 Learn the basics of object-oriented programming so that you can build your own Python package.
 
@@ -47,7 +47,7 @@ You can also find the files in the data scientist nanodegree term 2 GitHub repo.
 https://github.com/udacity/DSND_Term2/tree/master/lessons/ObjectOrientedProgramming
 
 
-2. Procedural vs Object-Oriented Programming
+## 2. Procedural vs Object-Oriented Programming
 https://www.youtube.com/watch?v=psXD_J8FnCQ&feature=emb_logo
 
 Objects are defined by characteristics and actions
@@ -60,3 +60,5 @@ Characteristics and Actions in English Grammar
 Another way to think about characteristics and actions is in terms of English grammar. A characteristic would be a noun. On the other hand, an action would be a verb.
 
 Let's pick something from the real-world: a dog. A few characteristics could be the dog's weight, color, breed, and height. These are all nouns. What actions would a dog take? A dog can bark, run, bite and eat. These are all verbs.
+
+
