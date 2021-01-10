@@ -76,7 +76,7 @@ In English, you might hear an attribute described as a property, description, fe
 Here is a reminder of how a class, object, attributes and methods relate to each other.
 
 
-4. Object-Oriented Programming Syntax
+## 4. Object-Oriented Programming Syntax
 https://www.youtube.com/watch?v=Y8ZVw1LHI8E&feature=emb_logo
 
 In this video, you'll see what a class and object look like in Python. In the next section, you'll have the chance to play around with the code. And then you will write your own class.
@@ -103,12 +103,12 @@ Self tells Python where to look in the computer's memory for the shirt_one objec
 
 The word self is just a convention. You could actually use any other name as long as you are consistent; however, you should always use self rather than some other word or else you might confuse people.
 
-5. Exercise: OOP Syntax Practice - Part 1
+## 5. Exercise: OOP Syntax Practice - Part 1
 
-6. Notes About OOP
+## 6. Notes About OOP
 https://www.youtube.com/watch?v=NcgDIWm6iBA&feature=emb_logo
 
-Set and Get methods
+### Set and Get methods
 The last part of the video mentioned that accessing attributes in Python can be somewhat different than in other programming languages like Java and C++. This section goes into further detail.
 
 The shirt class has a method to change the price of the shirt: shirt_one.change_price(20). In Python, you can also change the values of an attribute with the following syntax:
@@ -142,7 +142,7 @@ One of the benefits of set and get methods is that, as previously mentioned in t
 You can read more about get and set methods in Python on this Python Tutorial site.
 https://www.python-course.eu/python3_properties.php
 
-A Note about Attributes
+### A Note about Attributes
 There are some drawbacks to accessing attributes directly versus writing a method for accessing attributes.
 
 In terms of object-oriented programming, the rules in Python are a bit looser than in other programming languages. As previously mentioned, in some languages, like C++, you can explicitly state whether or not an object should be allowed to change or access an attribute's values directly. Python does not have this option.
@@ -162,14 +162,60 @@ def change_price(self, new_price):
 
 shirt_one.change_price(10)
 For the purposes of this introduction to object-oriented programming, you will not need to worry about updating attributes directly versus with a method; however, if you decide to further your studies of object-oriented programming, especially in another language such as C++ or Java, you'll have to take this into consideration.
-Modularized Code
+
+### Modularized Code
 Thus far in the lesson, all of the code has been in Jupyter Notebooks. For example, in the previous exercise, a code cell loaded the Shirt class, which gave you access to the Shirt class throughout the rest of the notebook; however, if you were developing a software program, you would want to modularize this code.
 You would put the Shirt class into its own Python script called, say, shirt.py. And then in another Python script, you would import the Shirt class with a line like: from shirt import Shirt.
 
 For now, as you get used to OOP syntax, you'll be completing exercises in Jupyter notebooks. But midway through the lesson, you'll modularize object-oriented code into separate files.
 
+## 7. Exercise: OOP Syntax Practice - Part 2
 
-8. Commenting Object-Oriented Code
+Now that you've had some practice instantiating objects, it's time to write your own class from scratch. This lesson has two parts. In the first part, you'll write a Pants class. This class is similar to the shirt class with a couple of changes. Then you'll practice instantiating Pants objects
+
+In the second part, you'll write another class called SalesPerson. You'll also instantiate objects for the SalesPerson.
+
+For this exercise, you can do all of your work in this Jupyter notebook. You will not need to import the class because all of your code will be in this Jupyter notebook.
+
+Answers are also provided. If you click on the Jupyter icon, you can open a folder called 2.OOP_syntax_pants_practice, which contains this Jupyter notebook ('exercise.ipynb') and a file called answer.py.
+
+### Pants class
+Write a Pants class with the following characteristics:
+
+the class name should be Pants
+the class attributes should include
+color
+waist_size
+length
+price
+the class should have an init function that initializes all of the attributes
+the class should have two methods
+change_price() a method to change the price attribute
+discount() to calculate a discount
+
+
+### SalesPerson class
+The Pants class and Shirt class are quite similar. Here is an exercise to give you more practice writing a class. This exercise is trickier than the previous exercises.
+
+Write a SalesPerson class with the following characteristics:
+
+the class name should be SalesPerson
+the class attributes should include
+first_name
+last_name
+employee_id
+salary
+pants_sold
+total_sales
+the class should have an init function that initializes all of the attributes
+the class should have four methods
+sell_pants() a method to change the price attribute
+calculate_sales() a method to calculate the sales
+display_sales() a method to print out all the pants sold with nice formatting
+calculate_commission() a method to calculate the salesperson commission based on total sales and a percentage
+
+
+## 8. Commenting Object-Oriented Code
 
 Did you notice anything special about the answer key in the previous exercise? The Pants class and the SalesPerson class contained docstrings! A docstring is a type of comment that describes how a Python module, function, class or method works. Docstrings, therefore, are not unique to object-oriented programming. This section of the course is merely reminding you to use docstrings and to comment your code. It's not just going to help you understand and maintain your code. It will also make you a better job candidate.
 
@@ -178,7 +224,7 @@ From this point on, please always comment your code. Use both in-line comments a
 Check out this link to read more about docstrings.
 https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
 
-Docstrings and Object-Oriented Code
+### Docstrings and Object-Oriented Code
 Below is an example of a class with docstrings and a few things to keep in mind:
 
 Make sure to indent your docstrings correctly or the code will not run. A docstring should be indented one indentation underneath the class or method being described.
@@ -231,9 +277,11 @@ class Pants:
         """
         return self.price * (1 - percentage)
 
-9. Gaussian Class
+## 9. Gaussian Class
 
 https://www.youtube.com/watch?v=TVzNdFYyJIU&feature=emb_logo
+
+### Resources for Review
 
 The example in the next part of the lesson assumes you are familiar with Gaussian and binomial distributions.
 
@@ -261,6 +309,7 @@ Binomial Distributions Wikipedia
 https://en.wikipedia.org/wiki/Binomial_distribution
 
 
-
+## 10. How the Gaussian Class Works
+https://www.youtube.com/watch?v=N-5I0d1zJHI&feature=emb_logo
 
 
