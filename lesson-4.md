@@ -1213,4 +1213,68 @@ gaussian_three.plot_histogram_pdf()
 # add gaussian_one and gaussian_two together
 gaussian_one + gaussian_two
 
+## 18. Advanced OOP Topics
+Inheritance is the last object-oriented programming topic in the lesson. Thus far you've been exposed to:
+classes and objects
+attributes and methods
+magic methods
+inheritance
+Classes, object, attributes, methods, and inheritance are common to all object-oriented programming languages.
 
+Knowing these topics is enough to start writing object-oriented software. What you've learned so far is all you need to know to complete this OOP lesson. However, these are only the fundamentals of object-oriented programming.
+
+Here is a list of resources for advanced Python object-oriented programming topics.
+
+-class methods, instance methods, and static methods - these are different types of methods that can be accessed at the class or object level
+https://realpython.com/instance-class-and-static-methods-demystified/
+-class attributes vs instance attributes - you can also define attributes at the class level or at the instance level
+https://www.python-course.eu/python3_class_and_instance_attributes.php
+-multiple inheritance, mixins - A class can inherit from multiple parent classes
+https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
+-Python decorators - Decorators are a short-hand way for using functions inside other functions
+https://realpython.com/primer-on-python-decorators/
+
+## 19. Organizing into Modules
+https://www.youtube.com/watch?v=AARS10U5bbo&feature=emb_logo
+
+Windows vs. macOS vs. Linux
+Linux, which our Udacity classroom workspaces use, is an operating system like Windows or macOS. One important difference is that Linux is free and open source whereas Windows is owned by Microsoft and macOS by Apple.
+
+Throughout the lesson, you can do all of your work in a classroom workspace. These workspaces provide interfaces that connect to virtual machines in the cloud. However, if you want to run this code locally on your computer, the commands to use might be slightly different.
+https://aws.amazon.com/es/getting-started/hands-on/launch-a-virtual-machine/
+
+If you are using macOS, you can open an application called "Terminal" and essentially use the same commands that you use in the workspace. That is because Linux and MacOS are related.
+
+If you are using Windows, the analogous application is called console. The console commands can be somewhat different than the terminal commands. A search engine like Google is your best friend for finding the right commands in a Windows environment.
+
+The classroom workspace has one major benefit. You can do whatever you want to the workspace including installing Python packages. And if something goes wrong, you can reset the workspace and start with a clean slate; however, always download your code files or commit your code to github or gitlab before resetting a workspace. Otherwise, you will lose your code!
+
+## 20. Demo: Modularized Code
+
+## 21. Making a Package
+Making a Package
+In the previous section, the Distribution and Gaussian code was refactored into individual modules. A Python module is just a Python file containing code.
+
+In this next section, you'll convert the Distributions code into a Python package. A package is a collection of Python modules. Although the previous code might already seem like it was a Python package because it contained multiple files, a Python package also needs an __init__.py file. In this section, you'll learn how to create this __init__.py file and then pip install the package into your local Python installation.
+
+https://www.youtube.com/watch?v=Hj2OBr1CGZM&feature=emb_logo
+
+### What is pip?
+https://pip.pypa.io/en/stable/
+
+Pip is a Python package manager that helps with installing and uninstalling Python packages. You might have used pip to install packages using the command line: pip install numpy. When you execute a command like pip install numpy, pip will download the package from a Python package repository called PyPi. However, for this next exercise, you'll use pip to install a Python package from a local folder on your computer. The last part of the lesson will focus on uploading packages to PyPi so that you can share your package with the world.
+https://pypi.org/
+
+You can complete this entire lesson within the classroom using the provided workspaces; however, if you want to develop a package locally on your computer, you should consider setting up a virtual environment. That way if you install your package on your computer, the package won't install into your main Python installation. Before starting the next exercise, the next part of the lesson will discuss what virtual environments are and how to use them.
+
+Object-Oriented Programming and Python Packages
+A Python package does not need to use object-oriented programming. You could simply have a Python module with a set of functions. However, most if not all of the popular Python packages take advantage of object-oriented programming for a few reasons:
+
+Object-oriented programs are relatively easy to expand especially because of inheritance
+Object-oriented programs obscure functionality from the user. Consider scipy packages. You don't need to know how the actual code works in order to use its classes and methods.
+
+### Object-Oriented Programming and Python Packages
+A Python package does not need to use object-oriented programming. You could simply have a Python module with a set of functions. However, most if not all of the popular Python packages take advantage of object-oriented programming for a few reasons:
+
+Object-oriented programs are relatively easy to expand especially because of inheritance
+Object-oriented programs obscure functionality from the user. Consider scipy packages. You don't need to know how the actual code works in order to use its classes and methods.
