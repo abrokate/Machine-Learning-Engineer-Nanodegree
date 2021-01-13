@@ -1339,4 +1339,16 @@ Once you've activated a virtual environment, you can then use terminal commands 
 
 Note that if you install packages on the workspace and run into issues, you can always reset the workspace; however, you will lose all of your work. So be sure to download any files you want to keep before resetting a workspace.
 
+## 23. Exercise: Making a Package and Pip Installing
+
+## 24. Binomial Class
+https://www.youtube.com/watch?v=O-4qRh74rkI&feature=emb_logo
+
+Binomial Class Exercise
+In this next video, you'll get an overview of the binomial class exercise.
+
+
+
+
+
 
