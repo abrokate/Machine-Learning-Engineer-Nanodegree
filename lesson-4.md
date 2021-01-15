@@ -1347,8 +1347,93 @@ https://www.youtube.com/watch?v=O-4qRh74rkI&feature=emb_logo
 Binomial Class Exercise
 In this next video, you'll get an overview of the binomial class exercise.
 
+https://www.youtube.com/watch?v=xTamXY6Z9Kg&feature=emb_logo
 
+## 25. Exercise: Binomial Class
 
+## 26. Scikit-learn Source Code
+
+https://www.youtube.com/watch?v=4_qkqMsbthg&feature=emb_logo
+
+https://github.com/scikit-learn/scikit-learn
+
+Contributing to a GitHub project
+Here are a few links about how to contribute to a github project:
+
+Beginner's Guide to Contributing to a Github Project
+https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
+
+Contributing to a Github Project
+https://github.com/MarcDiethelm/contributing/blob/master/README.md
+
+Advanced Python OOP Topics
+
+Here are a few links to more advanced OOP topics that appear in the Scikit-learn package:
+
+Decorators
+https://realpython.com/primer-on-python-decorators/
+
+Mixins
+https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
+
+## 27. Putting Code on PyPi
+https://www.youtube.com/watch?v=4uosDOKn5LI&feature=emb_logo
+
+### PyPi vs. Test PyPi
+Note that pypi.org and test.pypy.org are two different websites. You'll need to register separately at each website. If you only register at pypi.org, you will not be able to upload to the test.pypy.org repository.
+
+Also, remember that your package name must be unique. If you use a package name that is already taken, you will get an error when trying to upload the package.
+
+### Summary of the Terminal Commands Used in the Video
+cd binomial_package_files
+python setup.py sdist
+pip install twine
+
+# commands to upload to the pypi test repository
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+pip install --index-url https://test.pypi.org/simple/ dsnd-probability
+
+# command to upload to the pypi repository
+twine upload dist/*
+pip install dsnd-probability
+
+### More PyPi Resources
+Tutorial on distributing packages
+This link has a good tutorial on distributing Python packages including more configuration options for your setup.py file: tutorial on distributing packages. You'll notice that the python command to run the setup.py is slightly different with
+
+python3 setup.py sdist bdist_wheel
+
+This command will still output a folder called dist. The difference is that you will get both a .tar.gz file and a .whl file. The .tar.gz file is called a source archive whereas the .whl file is a built distribution. The .whl file is a newer type of installation file for Python packages. When you pip install a package, pip will first look for a whl file (wheel file) and if there isn't one, will then look for the tar.gz file.
+
+A tar.gz file, ie an sdist, contains the files needed to compile and install a Python package. A whl file, ie a built distribution, only needs to be copied to the proper place for installation. Behind the scenes, pip installing a whl file has fewer steps than a tar.gz file.
+
+Other than this command, the rest of the steps for uploading to PyPi are the same.
+
+Other Links
+If you'd like to learn more about PyPi, here are a couple of resources:
+
+Overview of PyPi
+MIT License
+
+## 28. Upload to PyPi
+
+View at:
+https://test.pypi.org/project/dsbws-probability/1.0/
+
+pip install -i https://test.pypi.org/simple/ dsbws-probability==1.0
+
+View at:
+https://pypi.org/project/dsbws-probability/1.0/
+
+pip install dsbws-probability==1.0
+
+## 29. Lesson Summary
+https://www.youtube.com/watch?v=DStO1hBKtHQ&feature=emb_logo
+
+Portfolio Exercise
+In the next lesson, you'll find instructions for a portfolio exercise involving object-oriented programming and Python packages.
+
+A portfolio exercise is an assignment meant to show off your skills and expand your professional portfolio. They are an excellent way to demonstrate to potential employers your knowledge and creativity. Note that these exercises are not reviewed and are thus not official graduation requirements.
 
 
 
